@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style.css" rel="stylesheet">
+    <title>Fiddlesticks</title>
+</head>
+<body>
+    <header>
+        <div class="w50s"><!--logo-->
+            <a href="https://www.leagueoflegends.com/pt-br/" target="_blank"><img src="Imagens/Logo-lol.png" width="130px" ></a>
+        </div><!--fim-logo-->
+        <div class="w50"><!--menu-->
+            <div>
+            <a href="https://www.leagueoflegends.com/pt-br/how-to-play/" target="_blank" class="champ">O Jogo</a>
+            <a href="https://www.leagueoflegends.com/pt-br/champions/" target="_blank" class="champ">Campeões</a>
+            <a href="https://www.leagueoflegends.com/pt-br/how-to-play/" target="_blank" class="champ">Notícias</a>
+            <a href="https://www.leagueoflegends.com/pt-br/news/tags/patch-notes/" class="nt" target="_blank">Notas de Atualização</a>
+            <a href="" target="_blank" class="mais">Mais</a>
+            <a href="https://signup.leagueoflegends.com/pt-br/signup/index?_ga=2.136116792.881585255.1708561583-1549756253.1708561581&_gl=1*1to5177*_ga*MTU0OTc1NjI1My4xNzA4NTYxNTgx*_ga_FXBJE5DEDD*MTcwODY0ODAyOC4yLjEuMTcwODY0OTMxNS4wLjAuMA.."><button type="button" target="_blank" class="botao2">Iniciar Sessão</button></a>
+            <a href="https://signup.leagueoflegends.com/pt-br/signup/index?_ga=2.136116792.881585255.1708561583-1549756253.1708561581&_gl=1*1to5177*_ga*MTU0OTc1NjI1My4xNzA4NTYxNTgx*_ga_FXBJE5DEDD*MTcwODY0ODAyOC4yLjEuMTcwODY0OTMxNS4wLjAuMA..#/"><button type="button" target="_blank" class="botao">Jogue Agora</button></a>
+        </div>
+    </div><!--fim-menu-->
+    </header>
+    <br>
+    <section class="meio"><!--imagem com nome-->
+        <div class="centro">
+            <img src="Imagens/Fidle.jpg" width="1200pxpx"/>
+        </div>
+        <div>
+            <a class="listchamp" href="https://www.leagueoflegends.com/pt-br/champions/" type="button">LISTA DE CAMPEÕES<img src = "Imagens/cavaleiro.avif" width="20px" height="15px"></a>
+        </div>
+        <div class="name">
+            <h2>
+                O TERROR ANCESTRAL
+            </h2>
+            <h1>FIDLLESTICKS</h1>
+        </div>
+    </section><!--fim imagem com nome-->
+    <section class="back"><!--descrição-->
+        <div class="inf">
+            <ul>
+                <li class="mago">
+                    <div class="mage">
+                        <img src="Imagens/mage.png" width="70px"/>
+                    </div>
+                    <div class="func">Função</div>
+                    <div class="atrib">Mago</div>
+                </li>
+            </ul>
+            <ul>
+                <li class="dif">
+                    <div class="barra-dificuldade">
+                        <div class="nivel-dificuldade"></div>
+                        <div class="nivel-dificuldade2"></div>
+                        <div class="nivel-dificuldade3"></div>
+                      </div>
+                    <div class="nivel">Difuldade</div>
+                    <div class="alta">Alta</div>
+                </li>
+            </ul>
+        </div>
+        <div class="vazio"></div>
+        <div class="descrip">
+            <div class="concer">
+            <span class="par1">Algo despertou em Runeterra. Algo ancestral. Algo terrível. O eterno terror conhecido como Fiddlesticks vaga pelos confins do mundo mortal, atraído por áreas dominadas por uma paranoia palpável, onde se alimenta de vítimas apavoradas. Com sua foice...<span id="mais"> essa criatura malformada e desgastada colhe a própria essência do medo, deixando a mente dos desafortunados que sobrevivem ao seu ataque totalmente fragmentada. Muito cuidado com o som dos corvos, ou com os sussurros de uma figura que parece quase humana... pois Fiddlesticks está de volta.</span>
+            <button onclick="vermais()" id="vermais">Ver Mais</button>
+        </div>
+    </div>
+    </section>
+    <section class="estatics">
+        <div class="perso">
+            <a class="maestria">MAESTRIA DE CAMPEÕES</a>
+            <a href="https://www.leagueofgraphs.com/pt/champions/builds/fiddlesticks" class="league" target="_blank">LEAGUEOFGRAPHS.COM</a>
+            <a href="https://www.op.gg/champions/fiddlesticks/build" target="_blank" class="op">OP.GG</a>
+            <a href="https://probuildstats.com/champion/fiddlesticks" target="_blank"class="build">PROBUILD STATS</a>
+        </div>
+    </section><!--fim descrição-->
+    <section class="habil">
+        <div><!-- habilidades começam aqui -->
+            <div>
+                <div class="fund">
+                    <h1><b>HABILIDADES</b></h1>
+                </div>
+                <div class="skills">
+                    <div class="botaowap"><button onclick="passive()" id="passive"></button></div>
+                    <div class="botaowap"><button onclick="habQ()" id="habQ"></button></div>
+                    <div class="botaowap"><button onclick="habW()" id="habW"></button></div>
+                    <div class="botaowap"><button onclick="habE()" id="habE"></button></div>
+                    <div class="botaowap"><button onclick="habR()" id="habR"></button></div>
+                </div>
+                <div class="descriptpas">
+                    <h6 id="pas" class="pas">Passiva</h6>
+                    <h2 id="nomehab" class="nomehab">UM ESPANTALHO INOFENSIVO</h2>
+                    <h4 id="descpas" class="descpas">O amuleto de Fiddlesticks é substituído por efígies do espantalho.</h4>
+                </div>
+                <!--<div class="descriptQ">
+                    <h6 id="Q">Q</h6>
+                    <h2 id="nomehabQ">ATERRORIZAR</h2>
+                    <h4 id="descQ">Ao causar dano a inimigos com habilidades enquanto não estiver sendo visto ou alvejar um inimigo com Aterrorizar, Fiddlesticks inflige medo em uma unidade-alvo inimiga, fazendo com que fuja aterrorizada por um curto período.</h4>
+                </div>
+                <div class="descriptW">
+                    <h6 id="W">W</h6>
+                    <h2 id="nomehabW">COLHEITA FARTA</h2>
+                    <h4 id="descW">Fiddlesticks drena a Vida dos inimigos próximos, causando dano de execução adicional no fim da duração.</h4>
+                </div>
+                <div class="descriptE">
+                    <h6 id="E">E</h6>
+                    <h2 id="nomehabE">CEIFAR</h2>
+                    <h4 id="descE">Fiddlesticks ceifa uma área com sua foice, reduzindo a velocidade de movimento de todos os inimigos atingidos e silenciando os atingidos no centro do corte.</h4>
+                </div>
+                <div class="descriptR">
+                    <h6 id="R">R</h6>
+                    <h2 id="nomehabR">TEMPESTADE DE CORVOS</h2>
+                    <h4 id="descR">Uma revoada de corvos assassinos voa em volta de Fiddlesticks, causando dano por segundo a todas as unidades inimigas próximas.</h4>-->
+                </div>
+            </div>
+        </div>
+        <div><!-- vídeo começa aqui -->
+            <div class="videos">
+                <div class="vidP" id="vidP">
+                    <video id="video" src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0009/ability_0009_P1.webm" type="video/mp4" width="460px" height="310px" autoplay loop muted></video>
+                    <!--<div id="videoQ"><video src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0009/ability_0009_P1.webm" type="video/mp4" width="460px" height="310px" autoplay loop muted></video></div>
+                    <div id="videoW"><video src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0009/ability_0009_P1.webm" type="video/mp4" width="460px" height="310px" autoplay loop muted></video></div>
+                    <div id="videoE"><video src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0009/ability_0009_P1.webm" type="video/mp4" width="460px" height="310px" autoplay loop muted></video></div>
+                    <div id="videoR"><video src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0009/ability_0009_P1.webm" type="video/mp4" width="460px" height="310px" autoplay loop muted></video></div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skins"><!--skins-->
+        <div>
+            <div id="skinscent"><img src="Imagens/FiddlesticksPadrão.jpg" id="trocaskin" width="1150px" alt="imagem">
+            <ul class="ski">
+                <h1 class="skinp">SKIN <br>DISPONÍVEIS</h1>
+                <br>
+                <hr>
+                <div class="container"><li class="skinsF" onclick="ampliarBotao(this)"><img src="Imagens/FiddlesticksPadrão.jpg" onclick="padrao()" width="100px" height="80px"><h6 onclick="padrao()">Fiddlesticks</h6></li>
+                <li class="skinsF" onclick="ampliarBotao(this)" ><img src="Imagens/FiddlesticksEspectral.jpg" onclick="espectral()" width="100px" height="80px"><h6 onclick="espectral()">Fiddlesticks Espectral</h6></li>
+                <li class="skinsF" onclick="ampliarBotao(this)"><img src="Imagens/FiddlesticksUnionJack.jpg" onclick="union()" width="100px" height="80px"><h6 onclick="union()">Fiddlesticks Union Jack</h6></li>
+                <li class="skinsF" onclick="ampliarBotao(this)"><img src="Imagens/FiddlesticksVelhoOeste.jpg" onclick="velho()" width="100px" height="80px"><h6 onclick="velho()">Fiddlesticks Velho Oeste</h6></li>
+                <li class="skinsF" onclick="ampliarBotao(this)"><img src="Imagens/FiddlesticksCabeçaDeAbobora.ezrealjpg" onclick="cabeca()" width="100px" height="80px"><h6 onclick="cabeca()">Fiddlesticks Cabeça de Abóbora</h6></li>
+                <li class="skinsF" onclick="ampliarBotao(this)"><img src="Imagens/FiddlesticksPernaDePau.jpg" onclick="perna()" width="100px" height="80px"><h6 onclick="perna()">Fiddlesticks Perna de Pau</h6></li>
+                <li class="skinsF" onclick="ampliarBotao(this)"><img src="Imagens/FiddlesticksFestaSurpresa.jpg" onclick="festa()" width="100px" height="80px"><h6 onclick="festa()">Fiddlesticks Festa Supresa</h6></li>
+                <li class="skinsF" onclick="ampliarBotao(this)"><img src="Imagens/FiddlesticksDocesTrevosos.jpg" onclick="doces()" width="100px" height="80px"><h6 onclick="doces()">Fiddlesticks Doces Trevosos</h6></li>
+                <li class="skinsF" onclick="ampliarBotao(this)"><img src="Imagens/FiddlesticksAscendente.jpg" onclick="ascendente()" width="100px" height="80px"><h6 onclick="ascendente()">Fiddlesticks Ascendente</h6></li>
+                <li class="skinsF"><img src="Imagens/FiddlesticksPretoriano.jpg" onclick="pretoriano()" width="100px" height="80px"><h6 onclick="pretoriano()">Fiddlesticks Pretoriano</h6></li>
+                <li class="skinsF" onclick="ampliarBotao(this)"><img src="Imagens/FiddleSticksNemesesEstelar.jpg" onclick="nemesis()" width="100px" height="80px"><h6 onclick="nemesis()">Fiddlesticks Nemeses Estelar</h6></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </section><!--fim-skins-->
+    <section class="foot"><!--inf=downl-->
+        <div class="inform">
+            <div class="lev">
+                <h4>LEVE O LEAGUE COM VOCÊ</h4>
+            </div>
+            <div class="baixe">
+                <h6>Baixe o aplicativo do League para sempre estar conectado aos seus amigos e ter acesso às partidas e notícias mais recentes dos Esports.</h6>
+            </div>
+            <div class="store">
+                <a href="https://apps.apple.com/br/app/riot-mobile/id1077150310?ls=1" target="_blank"><img src="Imagens/AppStore.png"  width="100px"></a>
+            </div>
+            <div class="play">
+                <a href="https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&hl=br&pli=1" target="_blank"><img src="Imagens/google.png"  width="100px"></a>
+            </div>
+        </div>
+    </section><!--fim-inf=downl-->
+    <section class="inflol"><!--inf-lol-->
+        <div class="inflol2">
+            <div>
+                <div class="sobrelol">
+                    <a class="sobre"
+                    target="_blank" href="https://www.leagueoflegends.com/pt-br/how-to-play/?_gl=1*1fqs0ob*_ga*MTU0OTc1NjI1My4xNzA4NTYxNTgx*_ga_FXBJE5DEDD*MTcxMDQ2MTAwOC4xNi4xLjE3MTA0Njg4OTUuMC4wLjA.">SOBRE LEAGUE OF LEGENDS</a>
+                    <a class="ajude"
+                    target="_blank" href="http://leagueoflegends.br-surveybr2.sgizmo.com/s3/">AJUDE-NOS A MELHORAR</a>
+                    <a class="status"
+                    target="_blank" href="https://status.riotgames.com/?locale=pt_BR">STATUS DE SERVIÇO</a>
+                    <a class="sup"
+                    target="_blank" href="https://support.riotgames.com/hc/pt-br">SUPORTE</a>
+                    <a class="torn"
+                    target="_blank" href="https://assets.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt209d2cef0f5445b1/61f2dd7cb1c6de35becba448/League_of_Legends_e_Teamfight_Tactics_Community_Competition_Guidelines_por-BR_v2.pdf">TORNEIOS INDEPENDENTES</a>
+                    <br>
+                    <br>
+                    <a class="app"
+                    target="_blank" href="https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&referrer=singular_click_id%3D0330369a-05c3-4dec-ad54-bfb45867fd35">BAIXE O APLICATIVO DE CELULAR RIOT MOBILE</a>
+                </div>
+            </div>
+        </div>
+    </section><!--fim-inf-lol-->
+    <footer class="rodape">
+        <div>
+            <div class="marcas">
+                <a target="_blank"  href="https://www.youtube.com/user/RiotGamesBrasil"><img src="Imagens/yt.webp"  class="marca" width="30px"></a>
+                <a target="_blank"  href="https://twitter.com/LoLegendsBR"><img src="Imagens/x.jpg"  class="marca" width="30px"></a>
+                <a target="_blank"  href="https://www.facebook.com/LeagueofLegendsBrasil"><img src="Imagens/facebook.png"  class="marca" width="30px"></a>
+                <a target="_blank"  href="https://www.instagram.com/leagueoflegendsbrasil"><img src="Imagens/instagram.jpg"  class="marca" width="30px"></a>
+                <a target="_blank"  href="https://www.reddit.com/r/leagueoflegends/"><img src="Imagens/reddit.png"  class="marca" width="30px"></a>
+            </div>
+            <div class="riot">
+                <img src="Imagens/riotgames.jpg" class="logo-riot"  width="40px">
+                <a class="logo-riot" type="button"target="_black" href="https://www.riotgames.com/pt-br">RIOT <br>GAMES</a>
+            </div>
+            <div class="direitos">
+                <h5>™ & © 2024 Riot Games, Inc. Todos os direitos reservados. Riot Games, League of Legends e PvP.net são marcas <br>registradas e marcas de serviço da Riot Games, Inc.</h5>
+            </div>
+            <div>
+                <div class="rodape2">
+                    <a class="eula"
+                    target="_blank" href="https://www.riotgames.com/pt-br/terms-of-service-BR">EULA</a>
+                    <a class="aviso"
+                    target="_blank" href="https://www.riotgames.com/pt-br/privacy-notice-BR">AVISO DE PRIVACIDADE</a>
+                    <a class="termos"
+                    target="_blank" href="https://www.riotgames.com/pt-br/terms-of-service-BR">TERMOS DE USO</a>
+                    <a class="pref"
+                    target="_blank" href="https://support.riotgames.com/hc/pt-br">PREFERÊNCIAS DE COOKIES</a>
+            </div>
+            <div class="indic">
+                <div class="indicacao">
+                <a class="indicacao2"><img src="Imagens/NR18-AUTO.jpg" width="50px"></a>
+                <p>Violência<br>Conteúdo Sexual<br>Linguagem Imprópria<br>Compras On-line<br>Interação de Usúarios</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

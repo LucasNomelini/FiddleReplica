@@ -1,0 +1,969 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    z-index: 1000;
+}
+
+body{
+    background-color: #0a0808;;
+}
+
+.w50s{
+    width: 20%;
+    height: 60px;
+
+}
+
+.w50{
+    width: 80%;
+    padding-top: 10px;
+    font-size: 20px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.champ{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+.champ:hover{
+    border-bottom: 4px solid #6eb4f5f6;
+}
+
+.nt{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+.nt:hover{
+    border-bottom: 4px solid #6eb4f5f6;
+}
+
+.uni{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+.uni:hover{
+    border-bottom: 4px solid #6eb4f5f6;
+}
+
+.mais{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+.mais:hover{
+    border-bottom: 4px solid #6eb4f5f6;
+}
+
+.botao{
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    cursor: pointer;
+    background-color: #33cbf1;
+}
+
+.botao2{
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: #36363691;
+}
+
+.meio{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.listchamp{
+    position: relative;
+    top: -640px;
+    right: -550px;
+    border: 1px solid #8ac3e9fd;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    padding-left: 30px;
+    font-size: 11px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.name{
+    font-style: italic;
+    margin-top: -160px;
+    font-size: 20px;
+}
+
+.name h1{
+    font-size: 100px;
+}
+
+.back{
+    display: flex;
+    max-width: 90%;
+    margin-top: -60px; 
+    margin-left: 140px;
+    margin-right: 140px;
+    height: 350px;
+    border: 1px solid #414040;
+    border-top: transparent;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.inf{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.mago{
+    list-style-type: none;
+    text-align: center;
+    font-size: 17px;
+    font-family: "Arial Italic", sans-serif; 
+}
+
+.mage{
+    margin-bottom: 5px;
+}
+
+.func{
+    margin-bottom: 5px;
+}
+
+.atrib{
+    margin-bottom: 5px;
+    color: #d5e482;
+}
+
+.dif{
+    list-style-type: none;
+    text-align: center;
+    font-size: 17px;
+    font-family: "Arial Italic", sans-serif;
+}
+
+.barra-dificuldade{
+    display: inline-flex;
+    margin: 32px;
+    padding: 1px;
+}
+
+.nivel-dificuldade {
+    background-color: rgb(8, 215, 247);; 
+    width: 19px; 
+    height: 15px;  
+    box-sizing: border-box; 
+    padding: 5px;
+    margin: 1px;
+    transform: skewX(-40deg);
+  }
+
+.nivel-dificuldade2 {
+    background-color:rgb(8, 215, 247);; 
+    width: 19px; 
+    height: 15px;  
+    box-sizing: border-box; 
+    padding: 5px;
+    margin: 1px;
+    transform: skewX(-40deg)
+}
+
+.nivel-dificuldade3 {
+    background-color: rgb(8, 215, 247);; 
+    width: 19px; 
+    height: 15px;  
+    box-sizing: border-box; 
+    padding: 5px;
+    margin: 1px;
+    transform: skewX(-40deg)
+}
+
+.nivel{
+    margin-bottom: 5px;
+}
+    
+.alta{
+    margin-bottom: 5px;
+    color: #d5e482;
+}
+
+.descrip{
+    width: 45%;
+    padding: 50px;
+}
+
+.concer{
+    float: flex;
+    font-size: 15px;
+}
+
+#pontos{
+    display: none;
+}
+
+#mais{
+    display: none;
+}
+
+#vermais{
+    display: inline;
+    background-color: #0a0808;
+    color: #bfc758;
+    padding: 5px;
+    border: none; 
+    font-size: 12px; 
+    cursor: pointer; 
+    position: relative; 
+}
+
+.perso{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.estatics{
+    display: flex;
+    max-width: 90%;
+    margin-left: 140px;
+    margin-right: 140px;
+    height: 50px;
+    border: 1px solid #414040;
+    border-top: transparent;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.maestria{
+    padding: 20px;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.league{
+    padding: 20px;
+    text-decoration: none;
+}
+
+.op{
+    padding: 20px;
+    text-decoration: none;
+}
+
+.build{
+    padding: 20px;
+    text-decoration: none;
+}
+
+.habil{
+    background: linear-gradient(#0a0808, #161515);
+    display: flex;
+    max-width: 100%; 
+    margin-top: 200px;
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 700px;
+}
+
+.fund{
+    max-width: 100%;
+    font-size: 50px;
+    font-family: 'Arial';
+    font-style: italic;
+    padding: 30px;
+}
+
+.skills{
+    display: flex;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.botaowap{
+    padding: 15px;
+}
+
+#passive{
+    width: 60px;
+    display: inline;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    background-image: url(Imagens/habilP.png);
+    transition: transform 0.3s ease;
+    transition: border 0.3 ease;
+}
+
+#passive:hover {
+    transform: translateY(-15px);
+    border: 1px solid #faf74e;
+}
+
+#habQ{
+    width: 60px;
+    display: inline;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    background-image: url(Imagens/habilQ.png);   
+    transition: transform 0.3s ease;
+}
+
+#habQ:hover {
+    transform: translateY(-15px);
+    border: 1px solid #faf74e;
+}
+
+
+#habW{
+    width: 60px;
+    height: 60px;
+    display: inline;
+    cursor: pointer;
+    border: none;
+    background-image: url(Imagens/habilW.png);
+    transition: transform 0.3s ease;
+}
+
+#habW:hover {
+    transform: translateY(-15px);
+    border: 1px solid #faf74e;
+}
+
+#habE{
+    width: 60px;
+    height: 60px;
+    display: inline;
+    cursor: pointer;
+    border: none;
+    background-image: url(Imagens/habilE.png);    
+    transition: transform 0.3s ease;
+}
+
+#habE:hover {
+    transform: translateY(-15px);
+    border: 1px solid #faf74e;
+}
+
+#habR{
+    width: 60px;
+    height: 60px;
+    display: inline;
+    cursor: pointer;
+    border: none;
+    background-image: url(Imagens/habilR.png);
+    transition: transform 0.3s ease;
+}
+
+#habR:hover {
+    transform: translateY(-15px);
+    border: 1px solid #faf74e;
+}
+
+.descriptpas{
+    display: inline;
+    text-align: left;
+}
+
+#pas{
+    margin-left: 10px;
+    margin-top: 40px;
+    opacity: 0.5;
+    display: inline-block;
+    font-family: "Beaufort for LOL", serif;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#nomehab{
+    display: flex;
+    margin-left: 10px;
+    padding: 8px 0;
+}
+
+#descpas{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 17px;
+    font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+    font-weight: normal;
+}
+
+.descriptQ{
+    display: none;
+    text-align: left;
+}
+
+#Q{
+    margin-left: 10px;
+    margin-top: 40px;
+    display: inline;
+    opacity: 0.5;
+    font-family: "Beaufort for LOL", serif;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#nomehabQ{
+    display: inline;
+    margin-left: 10px;
+    padding: 8px 0;
+}
+
+#descQ{
+    display: inline;
+    margin-left: 10px;
+    font-size: 17px;
+    font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+    font-weight: normal;
+}
+
+.descriptW{
+    display: none;
+    text-align: left;
+}
+
+#W{
+    margin-left: 10px;
+    margin-top: 40px;
+    opacity: 0.5;
+    display: inline;
+    font-family: "Beaufort for LOL", serif;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#nomehabW{
+    display: inline;
+    margin-left: 10px;
+    padding: 8px 0;
+}
+
+#descW{
+    display: inline;
+    margin-left: 10px;
+    font-size: 17px;
+    font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+    font-weight: normal;
+}
+
+.descriptE{
+    display: none;
+    text-align: left;
+}
+
+#E{
+    margin-left: 10px;
+    margin-top: 40px;
+    opacity: 0.5;
+    display: inline;
+    font-family: "Beaufort for LOL", serif;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#nomehabE{
+    display: inline;
+    margin-left: 10px;
+    padding: 8px 0;
+}
+
+#descE{
+    display: inline;
+    margin-left: 10px;
+    font-size: 17px;
+    font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+    font-weight: normal;
+}
+
+.descriptR{
+    display: none;
+    text-align: left;
+}
+
+#R{
+    display: inline;
+    margin-left: 10px;
+    margin-top: 40px;
+    opacity: 0.5;
+    font-family: "Beaufort for LOL", serif;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#nomehabR{
+    display: inline;
+    margin-left: 10px;
+    padding: 8px 0;
+}
+
+#descR{
+    display: inline;
+    margin-left: 10px;
+    font-size: 17px;
+    font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+    font-weight: normal;
+}
+
+.videos{
+    width: 100%;
+}
+
+#video{
+    margin-top: 150px;
+    margin-left: 160px;
+    border: 1px solid #414040;
+}
+
+.skins{
+    width: 100%;
+    height: 800px;
+    background-color: white;
+}
+
+#skinscent{
+    width: 85%;
+    margin-left: 100px;
+    max-height: 600px;
+    padding-top: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.ski{
+    width: 35%;
+    background-color: #08090aa1;
+    position: absolute;
+    top: 10%; 
+    left: 5%;
+    margin: -57px;
+    margin-top: -10px;
+    padding: 20px;
+}
+
+.skinp{
+    text-align: left;
+    font-size: 50px;
+}
+
+.container{
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.);
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding: 30px;
+    opacity: 0.7;
+}
+
+.skinsF{
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.skinsF:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.skinsF.clicked{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+h6{
+    margin-top: -60px;
+    margin-left: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.kaiez{
+    text-align: center;
+}
+
+.free{
+    position: relative;
+    top: -500px;
+    border: 1px solid #8ac3e9fd;
+    background-color: #71e3fffd;
+    color: black;
+    padding: 23px;
+    padding-left: 37px;
+    padding-right: 37px;
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.free:hover{
+    opacity: 1;
+}
+
+.foot{
+    width: 100%;
+    height: 80px;
+    top: -22px;
+    display: block;
+    position: relative;
+    background-color: rgb(6, 28, 37);
+}
+
+.inform{
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    display: inline;
+}
+
+.lev{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+    opacity: 0.8;
+    font-family: "Beaufort for LOL", serif;
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    font-size: 20px;
+}
+
+.baixe{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+    margin-left: -100px;
+    opacity: 0.6;
+    font-family: "Beaufort for LOL", serif;
+    display: inline-block;
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.baixe h6{
+    font-size: 12px;
+}
+
+.store{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 80px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.play{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.inflol{
+    width: 100%;
+    height: 130px;
+    top: -22px;
+    display: block;
+    position: relative;
+    background: #2929297c;
+}
+
+.inflol2{
+    width: 100%;
+    height: 160px;
+    display: inline-block;
+}
+
+.sobrelol{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.sobre{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.sobre:hover{
+    border: 1px solid transparent;
+    background-color: #58626da1;
+}
+
+.ajude{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.ajude:hover{
+    border: 1px solid transparent;
+    background-color: #58626da1;
+}
+
+.status{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.status:hover{
+    border: 1px solid transparent;
+    background-color: #58626da1;
+}
+
+.sup{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.sup:hover{
+    border: 1px solid transparent;
+    background-color: #58626da1;
+}
+
+.torn{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.torn:hover{
+    border: 1px solid transparent;
+    background-color: #58626da1;
+}
+
+.app{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.app:hover{
+    border: 1px solid transparent;
+    background-color: #58626da1;
+}
+
+.rodape{
+    width: 100%;
+    height: 400px;
+}
+
+.marcas{
+    text-align: center;
+}
+
+.marca{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #616d7256;
+    cursor: pointer;
+}
+
+.riot{
+    margin-top: 50px;
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+.riot:hover{
+    opacity: 1;
+}
+
+.logo-riot{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 5px;
+}
+
+.direitos{
+    margin-top: 30px;
+    text-align: center;
+    opacity: 0.3;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-size: 14px;
+}
+
+.rodape2{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.eula{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.eula:hover{
+    border: 1px solid transparent;
+    background-color: #58626da1;
+}
+
+.aviso{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.aviso:hover{
+    border: 1px solid transparent;
+    background-color: #58626da1;
+}
+
+.termos{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.termos:hover{
+    border: 1px solid transparent;
+    background-color: #58626da1;
+}
+
+.pref{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.pref:hover{
+    border: 1px solid transparent;
+    background-color: #58626da1;
+}
+
+.indic{
+    justify-content: center;
+    display: flex;
+}
+
+.indicacao{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    border: 1px solid transparent;
+    background-color: rgba(78, 79, 80, 0.664);
+    border-radius: 10px;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.indicacao2{
+    padding-right: 10px;
+}
